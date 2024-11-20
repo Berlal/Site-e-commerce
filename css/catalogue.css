@@ -1,0 +1,83 @@
+/* Style global */
+body {
+  background-color: #ffffcc;
+  color: #000;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation */
+nav {
+  background-color: #ffcc00;
+  padding: 1em;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+}
+
+nav li {
+  font-weight: bold;
+}
+
+nav li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Titre de la page */
+h1 {
+  text-align: center;
+  margin-top: 2em;
+  font-size: 2em;
+}
+
+/* Section du catalogue */
+section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2em;
+  padding: 2em;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* Article produit */
+article {
+  background-color: #fffacd;
+  border: 1px solid #ffcc00;
+  padding: 1em;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+article img {
+  max-width: 100%;
+  height: auto;
+  margin: 1em 0;
+  border-radius: 5px;
+}
+
+h2 {
+  color: #ffcc00;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+/* Description du produit */
+article p {
+  font-size: 0.9em;
+  line-height: 1.4;
+}
+
+article h1 {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+}

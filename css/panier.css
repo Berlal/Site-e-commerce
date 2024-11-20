@@ -1,0 +1,107 @@
+/* Style global */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fafad2; /* Jaune clair */
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation */
+nav {
+  background-color: #ffcc00; /* Jaune vif */
+  padding: 1em 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+
+nav li {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+nav li:hover {
+  text-decoration: underline;
+}
+
+/* Section principale */
+main {
+  padding: 2em;
+}
+
+h1 {
+  text-align: center;
+  color: #cc7a00; /* Jaune foncé */
+}
+
+/* Panier */
+.panier {
+  margin-top: 2em;
+  padding: 2em;
+  background-color: #fffacd; /* Jaune pâle */
+  border-radius: 8px;
+}
+
+.produit {
+  background-color: #ffffff; /* Fond blanc */
+  border: 1px solid #ffcc00; /* Bordure jaune vif */
+  border-radius: 8px;
+  padding: 1em;
+  margin-bottom: 1.5em;
+}
+
+.produit h2 {
+  color: #cc7a00; /* Jaune foncé */
+  margin-bottom: 0.5em;
+}
+
+.produit p {
+  margin: 0.5em 0;
+}
+
+button {
+  background-color: #ffcc00; /* Jaune vif */
+  border: none;
+  padding: 0.5em 1em;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #cc7a00; /* Jaune foncé */
+}
+
+/* Section Total */
+.total {
+  text-align: center;
+  margin-top: 2em;
+}
+
+.total h3 {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+/* Adaptabilité */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .panier {
+    padding: 1.5em;
+  }
+
+  .produit {
+    padding: 1em;
+  }
+}

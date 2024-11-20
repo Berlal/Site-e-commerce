@@ -1,0 +1,86 @@
+/* Style général */
+body {
+  background-color: #ffffcc; /* Fond jaune pâle */
+  color: #000; /* Texte noir */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation */
+nav {
+  background-color: #ffcc00; /* Jaune vif */
+  padding: 1em 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+
+nav li {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+nav li:hover {
+  text-decoration: underline;
+}
+
+/* Section Catalogue */
+h1 {
+  text-align: center;
+  margin-top: 1em;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5em;
+  padding: 2em;
+}
+
+/* Articles */
+article {
+  background-color: #fffacd; /* Jaune clair */
+  padding: 1em;
+  border: 1px solid #ffcc00; /* Contour jaune vif */
+  border-radius: 5px;
+}
+
+article h1 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+article p {
+  font-size: 0.9em;
+  line-height: 1.5;
+  margin-bottom: 1em;
+}
+
+article img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ffcc00;
+  margin-bottom: 1em;
+  border-radius: 3px;
+}
+
+article h2 {
+  text-align: center;
+  color: #cc7a00; /* Jaune foncé orangé */
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/* Adaptabilité */
+@media (max-width: 600px) {
+  section {
+    grid-template-columns: 1fr;
+  }
+}

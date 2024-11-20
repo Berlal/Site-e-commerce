@@ -1,0 +1,64 @@
+body {
+  background-color: #ffffcc; /* Jaune pâle pour le fond */
+  color: #000; /* Texte noir pour contraste */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #ffcc00; /* Jaune vif pour le menu */
+  padding: 1em;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+}
+
+nav li {
+  font-weight: bold;
+}
+
+nav li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2em;
+  gap: 1em;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 0.5em;
+  border: 1px solid #ffcc00;
+  border-radius: 3px;
+  width: 200px;
+}
+
+input::placeholder {
+  color: #999;
+}
+
+button {
+  background-color: #ffcc00; /* Jaune vif pour le bouton */
+  color: #000;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #ffd633; /* Jaune légèrement plus clair au survol */
+}
